@@ -16,6 +16,7 @@ const DashboardPage = () => {
   const router = useRouter();
 
   useEffect(() => {
+
     // Check if "isChecked" in localStorage is true
     const isChecked = localStorage.getItem("isChecked") === "true";
     setShowPdfs(isChecked);
