@@ -14,7 +14,7 @@ const DashboardPage = () => {
     // Fetch the list of PDFs dynamically
     const fetchPdfs = async () => {
       const pdfList: PdfData[] = [
-        { name: "Emmanuel's PDF", url: "/pdfs/EmmanuelDavid_Resume.pdf" }
+        { name: "Omar Khan's PDF", url: "/Copy-Omar-Khan-Resume.pdf" }
       ];
 
       setPdfs(pdfList);
