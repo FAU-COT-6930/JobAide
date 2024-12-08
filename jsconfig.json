@@ -2,6 +2,15 @@
   "compilerOptions": {
     "paths": {
       "@/*": ["./*"]
-    }
+    },
+    "jsx": "react-jsx", // Enables JSX with React 17+ support
+    "target": "ESNext", // Modern JavaScript support
+    "module": "ESNext", // Use ES Modules
+    "strict": true, // Enable strict type-checking options
+    "esModuleInterop": true, // Compatibility with CommonJS modules
+    "moduleResolution": "node", // Use Node.js module resolution
+    "allowJs": true, // Allow JavaScript files
+    "resolveJsonModule": true, // Allow importing JSON files
+    "skipLibCheck": true // Skip type checks for libraries
   }
 }
