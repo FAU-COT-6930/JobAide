@@ -2,7 +2,7 @@
 
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function NewApplication() {
   const [hasUploaded, setHasUploaded] = useState(false);
@@ -23,6 +23,12 @@ export default function NewApplication() {
       setIsRemaking(false);
     }, 5000);
   };
+
+  useEffect(() => {
+    if (showOmar2) {
+      localStorage.setItem("isChecked", "true");
+    }
+  }, [showOmar2]);
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-r from-blue-500 via-purple-500 to-indigo-500 p-6">

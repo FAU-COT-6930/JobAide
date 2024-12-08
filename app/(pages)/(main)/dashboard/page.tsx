@@ -25,7 +25,7 @@ const DashboardPage = () => {
       // Fetch the PDFs only if "isChecked" is true
       const fetchPdfs = async () => {
         const pdfList: PdfData[] = [
-          { name: "Emmanuel's Resume", url: "/pdfs/EmmanuelDavid_Resume.pdf" },
+          { name: "Copy-Omar-Khan-Resume", url: "http://localhost:3000/Copy-Omar-Khan-Resume.pdf" },
         ];
         setPdfs(pdfList);
       };
